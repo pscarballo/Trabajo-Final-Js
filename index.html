@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <title>Jordan's Closet v2.0</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header__bg"></div>
+        <div class="grid-logo"><img class="grid-logo-item" src="./images/jump2.png" alt=""></div>
+    </header>
+    
+    <div id="divCarro" class="divCarro ">
+
+        <div class="container ">
+
+            <div class="dolar three columns">
+                <table>
+                    <caption>Cotizacion Dolar</caption>
+                    <tbody class="tamTabla">
+                        <tr>
+                            <td></td>
+                            <th>COMPRA</th>
+                            <th>VENTA</th>
+                        </tr>
+                        <tr>
+                            <td id="nomb1"></td>
+                            <td id="cot1"></td>
+                            <td id="cotVent1"></td>
+                        </tr>
+                        <tr>
+                            <td id="nomb2"></td>
+                            <td id="cot2"></td>
+                            <td id="cotVent2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+           
+            <div class="dolar two columns chk">
+                <span>Filtros</span><br>
+                <input type="checkbox" id="cbox1" value="first_checkbox"> Zapatillas<br>
+                <input type="checkbox" id="cbox2" value="second_checkbox">Remera <br>
+                <input type="checkbox" id="cbox3" value="third_checkbox"> Accesorios <br>
+                <a href="#" id="btnFiltrar" class="button u-full-width">Filtrar</a>
+                <!-- <button id="btnFiltrar">FILTRAR</button> -->
+            </div>
+            <div class=" dolar three columns u-pull-left">
+                <a href="#" id="btnClear" class="button u-full-width">Borrar Filtro</a>
+            </div> 
+            <div class="two columns u-pull-right">
+                <ul>
+                    <li class="submenu">
+                        <img src="images/cart.png" width="40" class="img-carrito">
+                        <div id="carrito">
+
+                            <table id="lista-carrito" class="u-full-width">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                            <p id="totalCompra" class="button u-full-width">El Total de su compra es:</p>
+                            <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                            <a href="#" id="finalizar-compra" class="button u-full-width">Finalizar Compra</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    </div>
+
+    <section class="courses container" id="stock">
+
+
+        <div class="courses__grid">
+            <article id="zapa" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/zapatillas/aj9.jpg" alt="Jordan 9" />
+                </div>
+                <h3 class="card__title">Jordan 9</h3>
+                <p>Zapatilla Air Jordan</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description">Precio $110</p>
+                <button id="aj9" class="card__link  agregar-carrito ">Agregar Al Carrito</button>
+            </article>
+
+            <article id="zapa" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/zapatillas/aj10.jpg" alt="Jordan 10" />
+                </div>
+                <h3 class="card__title">Jordan 10</h3>
+                <p>Zapatilla Air Jordan</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description">Precio $115</p>
+                <button id="aj10" class="card__link btn agregar-carrito ">Agregar Al Carrito</button>
+            </article>
+
+            <article id="zapa" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/zapatillas/aj11.jpg" alt="Jordan 11" />
+                </div>
+                <h3 class="card__title">Jordan 11</h3>
+                <p>Zapatilla Air Jordan</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description">Precio $120</p>
+                <button id="aj11" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+            <article id="zapa" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/zapatillas/aj12.jpg" alt="Jordan 12" />
+                </div>
+                <h3 class="card__title">Jordan 12</h3>
+                <p>Zapatilla Air Jordan</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description"> Precio $125 </p>
+                <button id="aj12" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+            <article id="zapa" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/zapatillas/aj13.jpg" alt="Jordan 13" />
+                </div>
+                <h3 class="card__title">Jordan 13</h3>
+                <p>Zapatilla Air Jordan</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description"> Precio $130 </p>
+                <button id="aj13" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+            <article id="zapa" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/zapatillas/aj14.jpg" alt="Jordan 14" />
+                </div>
+                <h3 class="card__title">Jordan 14</h3>
+                <p>Zapatilla Air Jordan</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description"> Precio $135 </p>
+                <button id="aj14" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+            <article id="reme" class="card reme">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/Remeras/r1.jpg" alt="Remera Roja" />
+                </div>
+                <h3 class="card__title">Remera MJ</h3>
+                <p>Color Rojo</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description"> Precio $80 </p>
+                <button id="r1" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+            <article id="reme" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/Remeras/r2.jpg" alt="Remera Amarilla" />
+                </div>
+                <h3 class="card__title">Remera MJ</h3>
+                <p>Color Amarillo</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description"> Precio $82 </p>
+                <button id="r2" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+            <article id="reme" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/Remeras/r3.jpg" alt="Remera Azul" />
+                </div>
+                <h3 class="card__title">Remera MJ</h3>
+                <p>Color Azul</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description"> Precio $88 </p>
+                <button id="r3" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+            <article id="acc" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/accesorios/media.jpg" alt="Medias" />
+                </div>
+                <h3 class="card__title">Medias MJ</h3>
+                <p>Color Varios</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description"> Precio $20 </p>
+                <button id="acc1" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+            <article id="acc" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/accesorios/gorra.jpg" alt="Gorra" />
+                </div>
+                <h3 class="card__title">Gorra MJ</h3>
+                <p>Color Roja</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description"> Precio $50 </p>
+                <button id="acc2" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+            <article id="acc" class="card">
+                <div class="card__header">
+                    <small class="card__header--strong">Nuevo</small>
+                    <img src="./images/accesorios/vincha.jpg" alt="Vincha" />
+                </div>
+                <h3 class="card__title">Vincha MJ</h3>
+                <p>Color Negra</p>
+                <img src="./images/estrellas.png" width="50">
+                <p class="card__description"> Precio $40 </p>
+                <button id="acc3" class="card__link btn agregar-carrito">Agregar Al Carrito</button>
+            </article>
+
+
+
+        </div>
+
+    </section>
+
+
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav id="principal" class="menu">
+                        <a class="enlace" href="#">Conviertete en Revendedor</a>
+                        <a class="enlace" href="#">Aplicaciones Móviles</a>
+                        <a class="enlace" href="#">Temas</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav id="secundaria" class="menu">
+                        <a class="enlace" href="#">¿Quienes Somos?</a>
+                        <a class="enlace" href="#">Empleo</a>
+                        <a class="enlace" href="#">Blog</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- scrip sweetalert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- scrip personalizado>-->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
